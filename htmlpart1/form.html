@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+        <h3>Sign up</h3>
+        <form action="form.php" method="post">
+            First name:
+            <input
+                type="text"
+                name="first_name"
+                placeholder="enter your first name"
+            />
+            <br /><br />
+            Last name: <input type="text" name="last_name" /><br /><br />
+            Mobile: <input type="number" name="mobile" /> <br /><br />
+            Email: <input type="email" name="email" /><br /><br />
+            Password: <input type="password" name="password" /> <br /><br />
+            Gender:
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label>Male</label>
+            <input type="radio" name="gender" value="female" />
+            Female
+            <br /><br />
+
+            <input type="checkbox" name="terms" /> I accept all terms and
+            conditions <br /><br />
+
+            Subject:
+            <input type="checkbox" name="subject" />maths
+            <input type="checkbox" name="subject" />Chem
+            <input type="checkbox" name="subject" checked />Phy <br /><br />
+
+            Country:
+            <select name="country">
+                <option value="in">India</option>
+                <option value="us" selected>USA</option>
+                <option value="au">Australia</option>
+            </select>
+            <br /><br />
+            Upload document:
+            <input type="file" name="file" />
+            <br /><br />
+
+            <textarea name="large_text"> </textarea>
+            <br /><br />
+            <button type="submit" value="Save">Save</button>
+
+            <button type="button" value="Save">Button</button>
+        </form>
+    </body>
+</html>
